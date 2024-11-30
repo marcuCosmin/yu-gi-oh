@@ -24,7 +24,10 @@ export default tseslint.config(
     },
     settings: {
       "import/resolver": {
-        alias: [["", "./public"]]
+        alias: {
+          map: [["", "./public"]],
+          extensions: [".js", ".jsx", ".ts", ".tsx"]
+        }
       }
     },
     rules: {
